@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marble's Market</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+
+    <!-- HEADER DAN NAVIGASI -->
+    <header>
+        <h1>Marble's Market</h1>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#banner">Menu</a></li>
+                <li><a href="#produk">produk</a></li>
+                <li><a href="#keranjang">keranjang</a></li>
+                <li><a href="#checkout">checkout</a></li>
+                <li><a href="#kontak">kontak</a></li>
+                <li id="tentangMenu"><a href="tentang.html">Tentang Kami</a></li>
+                <li id="loginMenu"><a href="login.html">Login</a></li>
+                <li id="registerMenu"><a href="registrasi.html">Registrasi</a></li>
+            </ul>
+        </nav>
+
+        <form>
+            <input type="text" placeholder="Cari Produk">
+            <button type="submit">Cari</button>
+        </form>
+    </header>
+<!-- HEADER DAN NAVIGASI -->
+
+<!-- BANNER -->
+ <section id="banner">
+    <img src="t2.jpg" width="300px" height="300px" style="border-radius: 30%;">
+
+    <div class="kolom">
+        <p class="deskripsi">Selamat Datang di Marble's Market</p>
+        <p>Dapatkan diskon 15% untuk pembelian pertama lewat Whatsapp</p>
+        <h2>Temukan produk terbaik di Marble's Market</h2>
+        <p><a href="vidio.mp4">Pelajari lebih lanjut tentang kami</a></p>
+    </div>
+ </section>
+ <!-- BANNER -->
+
+ <!-- PRODUK -->
+  <section id="produk">
+    <h2>Produk Kami</h2> 
+
+    <div class="produk-item">
+        <img src="Tas3.jpg"alt="produk">
+        <h3>Tas</h3>
+        <p>Rp 165.000</p>
+        <button class="tambah-keranjang">Tambah Keranjang</button>
+    </div>
+
+    <div class="produk-item">
+        <img src="Tas1.jpg"alt="produk" width="100px"> 
+        <h3>Tas</h3>
+        <p>Rp 144.500</p>
+        <button class="tambah-keranjang">Tambah Keranjang</button>
+    </div>
+
+    <div class="produk-item">
+        <img src="Tas2.jpg"alt="produk">
+        <h3>Tas</h3>
+        <p>Rp 149.000</p>
+        <button class="tambah-keranjang">Tambah Keranjang</button>
+    </div>
+
+    <div class="produk-item">
+        <img src="Tas4.jpg"alt="produk">
+        <h3>Tas</h3>
+        <p>Rp 160.000</p>
+        <button class="tambah-keranjang">Tambah Keranjang</button>   
+    </div>
+
+    <div class="produk-item">
+        <img src="Tas5.jpg"alt="produk">
+        <h3>Tas</h3>
+        <p>Rp 168.000</p>
+        <button class="tambah-keranjang">Tambah Keranjang</button>
+    </div>
+
+   <div class="produk-item">
+        <img src="tas6.jpg"alt="produk">
+        <h3>Tas</h3>
+        <p>Rp 148.500</p>
+        <button class="tambah-keranjang">Tambah Keranjang</button>
+    </div>
+    
+    <div class="produk-item">
+        <img src="Tas7.jpg"alt="produk">
+        <h3>Tas</h3>
+        <p>Rp 189.900</p>
+        <button class="tambah-keranjang">Tambah Keranjang</button>
+    </div>
+
+     <div class="produk-item">
+        <img src="Tas8.jpg"alt="produk">
+        <h3>Tas</h3>
+        <p>Rp 176.500</p>
+        <button class="tambah-keranjang">Tambah Keranjang</button>
+    </div>
+
+     <div class="produk-item">
+        <img src="Tas9.jpg"alt="produk">
+        <h3>Tas</h3>
+        <p>Rp 179.500</p>
+        <button class="tambah-keranjang">Tambah Keranjang</button>
+    </div>
+
+  </section>
+    <!-- PRODUK -->
+
+    <!-- KATALOG -->
+     <div style="text-align: center; margin-top: 30px;">
+        <a href="katalog.jpg" class="tbl-biru">Lihat katalog lengkapnya</a>
+     </div>
+     <!-- KATALOG -->
+
+     <!-- KERANJANG -->
+      <section id="keranjang">
+        <h2>Keranjang Belanja</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                    <th>Total</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="daftar-keranjang"></tbody>
+        </table>
+        <p>Total Belanja: Rp <span id="total-belanja">0</span></p>
+      </section>
+      <!-- KERANJANG -->
+
+      <!-- CHECKOUT -->
+       <section id="checkout">
+         <h2>Checkout</h2>
+         <form onsubmit="kirimwhatsapp(event)">
+            <input type="text" id="nama" placeholder="Nama Lengkap" required>
+            <input type="text" id="alamat" placeholder="Alamat" required>
+            <input type="text" id="hp" placeholder="No Hp" required>
+            <button type="submit">Pesan Sekarang</button>
+            </form>
+       </section>
+       <!-- CHECKOUT -->
+
+       <!-- KONTAK -->
+        <section id="kontak">
+            <h2>Kontak Kami</h2>
+            <p>Email : rplsekoci@gmail.com<p>
+            <p>Website: rplsekoci.com</p>
+            <p>Whatsapp :081932518720</p>
+          </section>
+        <!-- KONTAK-->
+
+        <!-- NOTIFIKASI -->
+         <div id="toast"></div>
+         <!-- NOTIFIKASI -->
+
+         <!-- FOOTER -->
+          <footer>
+          <p>Copyright&copy; 2025 Rpl Sekoci.</p>
+          </footer>
+          <!-- FOOTER -->
+
+          <script src="script.js"></script>
+</body>
+</html>
